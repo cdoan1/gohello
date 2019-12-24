@@ -1,4 +1,4 @@
-# hello
+# gohello
 
 ## Summary
 
@@ -36,6 +36,6 @@ reference: https://github.com/golang-standards/project-layout
 ## Usage
 
 ```bash
-go build cmd/hello.go
-./hello
+go build cmd/gohello.go
+./gohello
 ```
