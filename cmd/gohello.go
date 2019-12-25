@@ -13,12 +13,11 @@ import (
 var data_example = `
 clusters:
   - name: example1
-    url: https://icp-console.apps.scale1.dev.multicloudops.io
+    url: https://icp-console.apps.scale1.io
     username: example1
     password: example1
   - name: example2
-    url: https://icp-console.apps.offline.dev.multicloudops.io
-    url-ocp: https://console-openshift-console.apps.offline.dev.multicloudops.io
+    url: https://icp-console.apps.offline.io
     username: exmaple2
     password: example2
   - name: blue-12
