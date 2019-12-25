@@ -1,10 +1,13 @@
 package main
 
 import (
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"log"
 	"path/filepath"
+
+	"gopkg.in/yaml.v2"
+
+	"github.com/cdoan1/gohello/cmd/runner"
 )
 
 var data_example = `
@@ -62,10 +65,13 @@ func main() {
 	// iterate through the clusters
 	for _, element := range cluster.Clusters {
 		if element.URL != "" && element.Password != "" {
-			log.Printf("name \t%s", element.Name)
-			log.Printf("url \t%s", element.URL)
-			log.Printf("username \t%s", element.Username)
-			log.Printf("password \t%s", element.Password)
+			log.Printf("name \t%s\n", element.Name)
+			// log.Printf("url \t%s", element.URL)
+			// log.Printf("username \t%s", element.Username)
+			// log.Printf("password \t%s", element.Password)
+
+			log.Printf("calling chrome runner ...")
+			runner.Run(element.Name, element.URL, element.Username, element.Password)
 		}
 	}
 }
