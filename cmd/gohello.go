@@ -57,8 +57,8 @@ func main() {
 	check(err)
 
 	// log.Printf("Clusters: %#v\n", cluster)
-	d, err := yaml.Marshal(&cluster)
-	log.Printf("current settings:\n\n%v\n", string(d))
+	// d, err := yaml.Marshal(&cluster)
+	// log.Printf("current settings:\n\n%v\n", string(d))
 
 	// log.Printf("length %d", len(cluster.Clusters))
 	// log.Printf("length %s", cluster.Clusters[0].Name)

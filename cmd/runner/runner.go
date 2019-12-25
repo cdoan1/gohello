@@ -246,7 +246,7 @@ func login2(urlstr string, username string, password string, quality int64, res 
 
 func overview(urlstr string, quality int64, res *[]byte) chromedp.Tasks {
 	var overview = urlstr + `/multicloud/overview`
-	log.Printf("urlstr: %s", overview)
+	// log.Printf("urlstr: %s", overview)
 	return chromedp.Tasks{
 		chromedp.Navigate(overview),
 		chromedp.WaitVisible(`//*[@class='overview-page']`),
@@ -290,7 +290,7 @@ func overview(urlstr string, quality int64, res *[]byte) chromedp.Tasks {
 
 func view3(urlstr string, quality int64, res *[]byte) chromedp.Tasks {
 	var view = urlstr + `/multicloud/clusters`
-	log.Printf("view3 url: %s", view)
+	// log.Printf("view3 url: %s", view)
 	return chromedp.Tasks{
 		chromedp.Navigate(view),
 		chromedp.WaitVisible(`//*[@class='page-content-container']`),
@@ -335,7 +335,7 @@ func view3(urlstr string, quality int64, res *[]byte) chromedp.Tasks {
 
 func view4(urlstr string, quality int64, res *[]byte) chromedp.Tasks {
 	var view = urlstr + `/multicloud/policies`
-	log.Printf("urlstr: %s", view)
+	// log.Printf("urlstr: %s", view)
 	return chromedp.Tasks{
 		chromedp.Navigate(view),
 		chromedp.WaitVisible(`//*[@class='page-content-container']`),
